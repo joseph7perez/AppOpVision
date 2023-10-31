@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TomarFotoFragment">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="340dp"
+        android:layout_height="426dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="98dp" />
+
+    <ImageButton
+        android:id="@+id/btntomarfoto"
+        android:layout_width="348dp"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="113dp"
+        android:onClick="Pa"
+        android:src="@drawable/camara_icon"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="34dp"
+        android:text="Tomar Foto"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</RelativeLayout>

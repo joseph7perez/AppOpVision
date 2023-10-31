@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearCuenta"
+    android:background="@color/secundario">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="175dp"
+            android:layout_height="153dp"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <ImageView
+                android:layout_width="112dp"
+                android:layout_height="93dp"
+                android:src="@drawable/icono" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1040dp"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido a OpVision"
+                android:textColor="@color/primario"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:alpha="0.8"
+                android:text="Por favor ingrese sus datos"
+                android:textColor="@color/primario"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:text="Ingrese su correo"
+                android:textColor="@color/primario"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="ejemplo@correo.com"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:text="Cree una contraseña"
+                android:textColor="@color/primario" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:endIconMode="password_toggle"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:textColor="@color/primario" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:text="Confirmar contraseña"
+                android:textColor="@color/primario" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:endIconMode="password_toggle"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confcontraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:textColor="@color/primario" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/crearcuentabtn"
+                android:layout_width="260dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:onClick="Pa"
+                android:text="Crear cuenta"
+                android:textColor="@color/white"
+                app:cornerRadius="30dp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.myapplication.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_tomarFoto"
+        android:name="com.example.myapplication.TomarFotoFragment"
+        android:label="@string/menu_tomar_foto"
+        tools:layout="@layout/fragment_tomar_foto" />
+
+    <fragment
+        android:id="@+id/nav_encuesta"
+        android:name="com.example.myapplication.EncuestaFragment"
+        android:label="@string/menu_encuesta"
+        tools:layout="@layout/fragment_encuesta" />
+
+    <fragment
+        android:id="@+id/nav_subirFoto"
+        android:name="com.example.myapplication.ui.SubirFoto.SubirFotoFragment"
+        android:label="@string/menu_subir_foto"
+        tools:layout="@layout/fragment_subir_foto" />
+
+    <fragment
+        android:id="@+id/nav_configuracion"
+        android:name="com.example.myapplication.ui.Configuracion.ConfiguracionFragment"
+        android:label="@string/menu_configuracion"
+        tools:layout="@layout/fragment_configuracion" />
+</navigation>

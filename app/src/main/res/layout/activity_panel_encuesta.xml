@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PanelEncuesta">
+
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="162dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <ImageView
+            android:layout_width="133dp"
+            android:layout_height="114dp"
+            android:src="@drawable/icono" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="448dp"
+        android:text="Antes de comenzar, necesitamos que realices una encuesta."
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/btnencuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="306dp"
+        android:background="@color/secundario"
+        android:backgroundTint="@color/secundario"
+        android:text="Realizar encuesta"
+        android:textColor="@color/white"
+        app:iconTint="@color/secundario"
+        app:rippleColor="#656161"
+        app:strokeColor="#595555" />
+
+
+</RelativeLayout>

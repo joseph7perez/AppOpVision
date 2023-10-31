@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/casa_icono"
+            android:title="@string/menu_inicio" />
+        <item
+            android:id="@+id/nav_encuesta"
+            android:icon="@drawable/encuesta_icono"
+            android:title="@string/menu_encuesta" />
+        <item
+            android:id="@+id/nav_tomarFoto"
+            android:icon="@drawable/camara_icon"
+            android:title="@string/menu_tomar_foto" />
+        <item
+            android:id="@+id/nav_subirFoto"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_subir_foto" />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@drawable/configuracion_icono"
+            android:title="@string/menu_configuracion" />
+
+    </group>
+</menu>
